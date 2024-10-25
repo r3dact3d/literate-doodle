@@ -46,12 +46,24 @@ controller_templates:
     inventory: dev_inventory
     project: Ansible Use Cases
     playbook: Dynamic Inventory in Ansible Automation Platform/get_sys_data.yml
-  - name: Terraform Plan
+  - name: Terraform Init and Plan
     job_type: run
     inventory: Controller Inventory
     project: Urban Terraform
     playbook: playbooks/tf_init_plan.yml
+    execution_environment: terraform-ee-base
+    use_fact_cache: yes
+  - name: Terraform Load and Apply
+    job_type: run
+    inventory: Controller Inventory
+    project: Urban Terraform
+    playbook: playbooks/tf_apply_plan.yml
+    execution_environment: terraform-ee-base
+    use_fact_cache: yes
   - name: RHEL Update
+    credentials:
+      - AWS
+      - Demo Credential
     job_type: run
     inventory: dev_inventory
     project: Terraform Infra
