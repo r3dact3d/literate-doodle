@@ -6,6 +6,6 @@ controller_execution_environments:
     image: quay.io/brthomps/network-ee
     organization: Dev
   - name: "terraform-ee-base"
-    organization: Default
+    organization: Dev
     image: dockerhub.com/r3dact3d/terreform-ee
 ...

@@ -54,17 +54,15 @@ controller_templates:
     project: Urban Terraform
     playbook: playbooks/tf_init_plan.yml
     execution_environment: terraform-ee-base
-#    survey_enabled: true
-#    survey: "{{ lookup('template', 'template_surveys/terraform_survey.json') | regex_replace('\\n', '') }}"
     use_fact_cache: yes
-    extra_vars: "{{ git_url_tf }}"
+    extra_vars: ''
   - name: Terraform Load and Apply
     job_type: run
     inventory: Controller Inventory
     project: Urban Terraform
     playbook: playbooks/tf_apply_plan.yml
     execution_environment: terraform-ee-base
-    extra_vars: "{{ git_url_tf }}"
+    extra_vars: ''
     use_fact_cache: yes
   - name: RHEL Update
     credentials:
