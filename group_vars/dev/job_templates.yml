@@ -46,6 +46,8 @@ controller_templates:
     inventory: dev_inventory
     project: Ansible Use Cases
     playbook: Dynamic Inventory in Ansible Automation Platform/get_sys_data.yml
+
+
   - name: Terraform Init and Plan
     job_type: run
     inventory: Controller Inventory
