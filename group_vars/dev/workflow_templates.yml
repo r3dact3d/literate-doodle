@@ -2,7 +2,7 @@
 controller_workflows:
   - name: Urban Terraform Workflow
     description: Terraform Collection Workflow
-    extra_vars: "{{ git_url_tf }}"
+    extra_vars: ''
     survey_enabled: true
     survey: "{{ lookup('template', 'template_surveys/terraform_survey.json') | regex_replace('\\n', '') }}"
     allow_simultaneous: false
