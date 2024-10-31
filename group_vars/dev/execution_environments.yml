@@ -1,11 +1,11 @@
 ---
 controller_execution_environments:
   - name: "brady-ee-rhel8"
-    image: quay.io/brthomps/brady-ee-rhel8
+    image: quay.io/brthomps/brady-ee-rhel8:latest
   - name: "network-ee-base"
-    image: quay.io/brthomps/network-ee
+    image: quay.io/brthomps/network-ee:latest
     organization: Dev
   - name: "terraform-ee-base"
     organization: Dev
-    image: dockerhub.com/r3dact3d/terreform-ee
+    image: docker.io/r3dact3d/terraform-ee:1.0.2
 ...
