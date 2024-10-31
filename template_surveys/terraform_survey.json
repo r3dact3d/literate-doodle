@@ -1,0 +1,18 @@
+{
+    "name": "Terraform Survey",
+    "description": "Terrafrom Survey",
+    "spec": [
+      {
+        "question_description": "Git URL of Terraform",
+        "min": 0,
+        "default": "",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "git_url_tf",
+        "question_name": "Git URL",
+        "type": "text"
+      }
+    ]
+  }
