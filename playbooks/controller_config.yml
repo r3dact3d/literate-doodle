@@ -4,5 +4,5 @@
   connection: local
   collections: infra.aap_configuration
   roles:
-    - {role: infra.aap_configuration.dispatch, when: controller_settings is defined}
+    - {role: infra.aap_configuration.dispatch, when: gateway_settings is defined}
 ...

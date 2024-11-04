@@ -3,4 +3,16 @@ controller_settings:
   settings:
     GALAXY_IGNORE_CERTS: true
     AWX_COLLECTIONS_ENABLED: true
+
+gateway_settings:
+  gateway_token_name: X-DAB-JW-TOKEN
+  gateway_access_token_expiration: 600
+  gateway_basic_auth_enabled: true
+  gateway_proxy_url: https://localhost:9080
+  gateway_proxy_url_ignore_cert: false
+  password_min_length: 0
+  password_min_digits: 0
+  password_min_upper: 0
+  password_min_special: 0
+  allow_admins_to_set_insecure: false
 ...
