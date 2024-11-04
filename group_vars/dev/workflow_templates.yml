@@ -31,6 +31,8 @@ controller_workflows:
           name: Plan Review Node
           description: Approve this to proceed in workflow
           timeout: 900 # 15 minutes
+        success_nodes:
+          - Load and Apply
       - all_parents_must_converge: false
         identifier: Load and Apply
         unified_job_template: Terraform Load and Apply

@@ -1,9 +1,8 @@
 ---
 collections:
-  - name: infra.controller_configuration
-  - name: infra.ah_configuration
-  - name: infra.ee_utilities
-  - name: infra.aap_utilities
-  - name: awx.awx
-  - name: infra.eda_configuration
+  - name: ansible.platform
+  - name: ansible.hub
+  - name: ansible.controller
+  - name: ansible.eda
+  - name: infra.aap_configuration
 ...
