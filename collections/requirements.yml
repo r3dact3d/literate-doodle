@@ -1,7 +1,5 @@
 ---
 collections:
-  - name: ansible.hub
-  - name: ansible.eda
-  - name: infra.aap_configuration
   - name: infra.controller_configuration
+  - name: awx.awx
 ...
