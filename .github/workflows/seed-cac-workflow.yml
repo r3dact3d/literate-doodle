@@ -21,5 +21,5 @@ jobs:
       - name: Run ansible playbook
         run: |
           ansible-galaxy collection install --pre -r collections/requirements.yml
-          ansible-playbook infra.aap_configuration.configure_controller.yml -i inventory.yml \
+          ansible-playbook playbooks/configure_aap.yml -i inventory.yml \
             -e "ansible_python_interpreter=$(which python3) controller_password=${{ secrets.CONTROLLER_PASSWORD }} github_cac_pat=${{ secrets.CAC_PAT }} env=dev"
