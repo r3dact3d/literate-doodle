@@ -6,7 +6,7 @@
   tasks:
     - name: Include setting role
       ansible.builtin.include_role:
-        name: infra.aap_configuration.settings
+        name: infra.controller_configuration.settings
       when: controller_settings is defined
 
     - name: Include organization role
