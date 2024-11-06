@@ -5,7 +5,7 @@ all:
       children:
         dev_controller:
           hosts:
-            blinker19.sandbox2295.opentlc.com:
+            aap-aap.apps.cluster-fxqqc-1.dynamic.redhatworkshops.io:
  
     
     automationcontroller:
