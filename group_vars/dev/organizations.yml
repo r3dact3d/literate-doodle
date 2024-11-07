@@ -1,5 +1,5 @@
 ---
-aap_organizations:
+controller_organizations:
   - name: Dev
     description: This is the Dev Group
 ...
