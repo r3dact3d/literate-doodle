@@ -4,7 +4,7 @@ controller_workflows:
     description: Terraform Collection Workflow
     extra_vars: ''
     survey_enabled: true
-    survey: "{{ lookup('template', '../template_surveys/terraform_survey.json') | regex_replace('\\n', '') }}"
+    survey: "{{ lookup('template', 'template_surveys/terraform_survey.json') | regex_replace('\\n', '') }}"
     allow_simultaneous: false
     ask_variables_on_launch: true
     inventory:
