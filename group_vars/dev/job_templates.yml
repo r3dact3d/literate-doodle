@@ -28,7 +28,7 @@ controller_templates:
   - name: Controller Config
     project: Config As Code
     job_type: run
-    playbook: playbooks/controller_config.yml
+    playbook: controller_config.yml
     inventory: Demo Inventory
     execution_environment: Default execution environment
     concurrent_jobs_enabled: false
