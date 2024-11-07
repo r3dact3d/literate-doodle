@@ -3,15 +3,39 @@
     "description": "Terrafrom Survey",
     "spec": [
       {
-        "question_description": "Git URL of Terraform",
+        "question_description": "",
         "min": 0,
-        "default": "",
+        "default": "https://github.com/r3dact3d/urban-terraform",
         "max": 128,
         "required": true,
         "choices": "",
         "new_question": true,
         "variable": "git_url_tf",
-        "question_name": "Git URL",
+        "question_name": "What is the Git url that contains Terraform Code?",
+        "type": "text"
+      },
+      {
+        "question_description": "",
+        "min": 0,
+        "default": "us-east-2",
+        "max": 0,
+        "required": true,
+        "choices": "us-east-1\nus-east-2\nus-west-1",
+        "new_question": true,
+        "variable": "tf_region",
+        "question_name": "What AWS region for S3 bucket Backend Config?",
+        "type": "multiplechoice"
+      },
+      {
+        "question_description": "",
+        "min": 0,
+        "default": "tfstate-bucket-blinker19",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "tf_s3_bucket",
+        "question_name": "What is the name of the S3 bucket in AWS for Terraform Backend config?",
         "type": "text"
       }
     ]
